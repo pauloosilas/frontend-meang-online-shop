@@ -9,6 +9,11 @@ export class AdminComponent implements OnInit {
 
   constructor() { }
 
+  toggledValue = true;
+  toggled($event: any){
+    console.log('admin', $event)
+    this.toggledValue = $event;
+  }
   ngOnInit(): void {
   }
 
